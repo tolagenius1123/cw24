@@ -8,10 +8,13 @@ const HeroSection = () => {
 	const router = useRouter();
 
 	return (
-		<div className="w-full bg-paleYellow px-10 pt-[150px] md:pt-[200px] pb-10 flex flex-col md:flex-row items-center justify-between gap-10">
+		<div
+			id="hero"
+			className="w-full bg-paleYellow px-10 pt-[150px] md:pt-[200px] pb-20 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20"
+		>
 			<div className="w-full md:w-1/2">
 				<h1 className="text-darkGrey text-[40px] md:text-[60px] font-bold leading-[50px] md:leading-[70px]">
-					Connecting You with Top Health Professional
+					Connecting You with Top Health Professionals
 				</h1>
 				<p className="mt-2 text-customRed text-lg">
 					Our recruitment services specialize in matching skilled
@@ -29,17 +32,13 @@ const HeroSection = () => {
 					<CustomButton
 						btnTitle="Learn More"
 						btnType="button"
-						btnStyles="text-darkGrey font-semibold border-2 w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer hover:bg-lightGrey hover:text-white"
+						btnStyles="text-darkGrey font-semibold border-2 w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer hover:bg-lightGrey hover:text-white hover:border-none"
 						btnAction={() => router.push("/")}
 					/>
 				</div>
 			</div>
 			<div className="w-full md:w-1/2 flex items-center justify-center">
-				<Image
-					src={Hero}
-					alt="hero-image"
-					// className="rounded-[100px]"
-				/>
+				<Image src={Hero} alt="hero-image" height={500} />
 			</div>
 		</div>
 	);

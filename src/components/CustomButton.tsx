@@ -1,7 +1,8 @@
 "use client";
+import { ReactNode } from "react";
 
 type CustomButtonProps = {
-	btnTitle: string;
+	btnTitle: string | ReactNode;
 	btnStyles: string;
 	btnType: "submit" | "reset" | "button" | undefined;
 	btnAction: () => void;
