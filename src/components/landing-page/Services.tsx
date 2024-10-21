@@ -5,7 +5,7 @@ import ServiceCard from "./ServiceCard";
 import { ServiceLogo, ServiceWhiteLogo } from "@/assets/icons";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { Hero, ServiceImage } from "@/assets/images";
+import { ServiceImage } from "@/assets/images";
 
 export default function Services() {
 	const router = useRouter();

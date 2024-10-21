@@ -1,44 +1,7 @@
-// import { Avatar, Rating } from "@/assets/images";
-// import Image from "next/image";
-
-// export default function Testimonials() {
-// 	return (
-// 		<div id="team" className="w-full bg-white px-10 py-20 text-[#2B4449]">
-// 			<div className="w-[50%] mx-auto">
-// 				<h1 className="text-2xl font-semibold text-center">
-// 					Testimonial
-// 				</h1>
-// 				<div className="mt-10 w-[90%] mx-auto flex flex-col items-center gap-2">
-// 					<Image src={Rating} alt="rating-icon" />
-// 					<p className="font-semibold mt-3 text-center text-xl">
-// 						"The team at Health and Social Care Recruitment exceeded
-// 						our expectations. Their dedication to finding the right
-// 						fit for our organization was truly impressive."
-// 					</p>
-// 					<div className="mt-3 flex items-center gap-3">
-// 						<Image src={Avatar} alt="rating-icon" />
-// 						<div className="flex flex-col">
-// 							<p className="font-semibold">James Johnson</p>
-// 							<p className="text-sm">HR Manager, CarePlus</p>
-// 						</div>
-// 					</div>
-// 				</div>
-// 				<div className="mt-5 flex items-center">
-// 					<div className="mx-auto flex items-center gap-2">
-// 						<div className="rounded-full h-3 w-3 bg-black"></div>
-// 						<div className="rounded-full h-3 w-3 bg-black"></div>
-// 						<div className="rounded-full h-3 w-3 bg-black"></div>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</div>
-// 	);
-// }
-
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Avatar, Rating } from "@/assets/images";
+import { Avatar, Leadership, Rating } from "@/assets/images";
 import CustomButton from "../CustomButton";
 
 const testimonials = [
@@ -70,9 +33,9 @@ const TestimonialCarousel = () => {
 			setActiveIndex(
 				(prevIndex) => (prevIndex + 1) % testimonials.length
 			);
-		}, 5000); // Change testimonial every 5 seconds
+		}, 5000);
 
-		return () => clearInterval(interval); // Clear interval on component unmount
+		return () => clearInterval(interval);
 	}, []);
 
 	return (
@@ -81,7 +44,7 @@ const TestimonialCarousel = () => {
 				id="team"
 				className="w-full bg-white px-10 py-20 text-[#2B4449]"
 			>
-				<div className="w-[50%] mx-auto">
+				<div className="w-[90%] md:w-[50%] mx-auto">
 					<h1 className="text-2xl font-semibold text-center">
 						Testimonial
 					</h1>
@@ -123,7 +86,7 @@ const TestimonialCarousel = () => {
 			</div>
 			<div
 				id="team"
-				className="w-full bg-lightGrey px-10 py-20 text-white"
+				className="w-full bg-lightGrey px-10 py-20 text-white text-center"
 			>
 				<div className="w-[80%] mx-auto flex flex-col items-center gap-5">
 					<h1 className="text-3xl md:text-4xl font-semibold">
@@ -146,6 +109,30 @@ const TestimonialCarousel = () => {
 							btnStyles="text-white font-semibold border-2 w-[134px] h-[48px] bg-transparent border-white cursor-pointer transition ease-in-out duration-300 hover:bg-white hover:border-none hover:text-customRed"
 							btnAction={() => {}}
 						/>
+					</div>
+				</div>
+			</div>
+			<div
+				id="team"
+				className="w-full bg-paleYellow px-10 py-20 text-darkGrey text-center"
+			>
+				<div className="w-full md:w-[80%] mx-auto flex flex-col items-center gap-5">
+					<h1 className="text-3xl md:text-4xl font-semibold">
+						Our Team / Leadership
+					</h1>
+					<p className="text-customRed text-sm md:text-lg">
+						Our leadership team consists of experienced directors
+						with a proven track record in both healthcare and
+						recruitment. Their extensive knowledge and expertise
+						ensure that CW24 operates at the highest standards,
+						offering tailored recruitment solutions that meet the
+						ever-evolving needs of healthcare providers. From
+						strategic direction to day-to-day management, our
+						directors are committed to maintaining the quality and
+						reliability that CW24 is known for.
+					</p>
+					<div className="">
+						<Image src={Leadership} alt="leadership-logo" />
 					</div>
 				</div>
 			</div>

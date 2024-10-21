@@ -6,5 +6,16 @@ import Team3 from "./team3.png";
 import Team4 from "./team4.png";
 import Rating from "./rating.png";
 import Avatar from "./avatar.png";
+import Leadership from "./Leadership.png";
 
-export { Hero, ServiceImage, Team1, Team2, Team3, Team4, Rating, Avatar };
+export {
+	Hero,
+	ServiceImage,
+	Team1,
+	Team2,
+	Team3,
+	Team4,
+	Rating,
+	Avatar,
+	Leadership,
+};
