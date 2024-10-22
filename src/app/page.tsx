@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Contact from "@/components/landing-page/Contact";
 import FAQs from "@/components/landing-page/FAQs";
 import HeroSection from "@/components/landing-page/Hero";
 import Services from "@/components/landing-page/Services";
@@ -14,6 +15,7 @@ export default function Home() {
 			<Team />
 			<Testimonials />
 			<FAQs />
+			<Contact />
 		</main>
 	);
 }
