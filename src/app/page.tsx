@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/landing-page/Contact";
 import FAQs from "@/components/landing-page/FAQs";
+import Footer from "@/components/landing-page/Footer";
 import HeroSection from "@/components/landing-page/Hero";
 import Services from "@/components/landing-page/Services";
 import Team from "@/components/landing-page/Team";
@@ -16,6 +17,7 @@ export default function Home() {
 			<Testimonials />
 			<FAQs />
 			<Contact />
+			<Footer />
 		</main>
 	);
 }

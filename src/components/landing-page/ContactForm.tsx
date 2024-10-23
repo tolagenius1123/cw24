@@ -1,6 +1,8 @@
+"use client";
 import CustomInput from "../CustomInput";
 import { Checkbox } from "@/components/ui/checkbox";
 import CustomTextArea from "../CustomTextArea";
+import CustomButton from "../CustomButton";
 
 export default function ContactForm() {
 	return (
@@ -79,6 +81,14 @@ export default function ContactForm() {
 				inputName="message"
 				inputStyles="p-2 bg-transparent border border-black h-[300px] resize-none"
 			/>
+			<div className="mt-6">
+				<CustomButton
+					btnTitle="Send"
+					btnType="button"
+					btnStyles="text-paleYellow font-semibold w-[134px] h-[48px] bg-darkGrey cursor-pointer"
+					btnAction={() => {}}
+				/>
+			</div>
 		</form>
 	);
 }

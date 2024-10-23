@@ -20,7 +20,7 @@ export default function Navbar() {
 						Home
 					</Link>
 					<Link
-						href="/"
+						href="/about"
 						className="text-lightGrey font-semibold hover:text-darkGrey"
 					>
 						About
