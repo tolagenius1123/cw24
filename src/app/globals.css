@@ -8,6 +8,13 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+.aboutBanner {
+	background-image: url("../assets/images/about-banner.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
