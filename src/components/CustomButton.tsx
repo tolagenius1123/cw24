@@ -5,7 +5,7 @@ type CustomButtonProps = {
 	btnTitle: string | ReactNode;
 	btnStyles: string;
 	btnType: "submit" | "reset" | "button" | undefined;
-	btnAction: () => void;
+	btnAction?: () => void;
 };
 
 export default function CustomButton({

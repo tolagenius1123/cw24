@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 type ServiceCard = {
+	id: number;
 	service: {
 		id: number;
 		image: string;
@@ -9,8 +10,8 @@ type ServiceCard = {
 	};
 };
 
-export default function ServiceCard({ service }: ServiceCard) {
-	const { id, title, description, image } = service;
+export default function ServiceCard({ id, service }: ServiceCard) {
+	const { title, description, image } = service;
 
 	return (
 		<div key={id} className="flex flex-col gap-5 md:gap-8">

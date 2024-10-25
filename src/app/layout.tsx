@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
 	title: "CW24 - healthcare recruitment agency dedicated to providing high-quality staffing solutions for healthcare providers across the UK",
@@ -13,8 +14,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body>{children}</body>
+		<html lang="en" className="scroll-smooth">
+			<body>
+				<main>{children}</main>
+				<Toaster />
+			</body>
 		</html>
 	);
 }
