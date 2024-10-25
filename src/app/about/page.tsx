@@ -42,8 +42,8 @@ export default function AboutPage() {
 						provided in the healthcare sector by delivering
 						top-notch recruitment services. We aim to be the go-to
 						provider for healthcare staffing, known for reliability,
-						professionalism, and a deep understanding of the
-						sector's needs.
+						professionalism, and a deep understanding of the sectors
+						needs.
 					</p>
 				</div>
 			</div>
@@ -53,7 +53,7 @@ export default function AboutPage() {
 					<p className="mt-5 md:mt-8 text-lg text-customRed">
 						At CW24, we are always on the lookout for skilled
 						healthcare professionals to join our growing team.
-						Whether you're looking for temporary or permanent
+						Whether youre looking for temporary or permanent
 						positions, we provide exciting career opportunities in
 						various healthcare settings. Apply today or register
 						your interest by contacting us at info@cw24.co.uk.

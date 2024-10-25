@@ -6,6 +6,7 @@ type AccordionProps = {
 	question: string;
 	answer: string;
 	data: any;
+	// data: { id: number; question: string; answer: string };
 };
 
 const Accordion = ({ question, answer, data }: AccordionProps) => {
