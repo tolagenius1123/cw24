@@ -1,14 +1,35 @@
 import Navbar from "@/components/Navbar";
 import "../globals.css";
 import Image from "next/image";
-import { ServiceImage } from "@/assets/images";
+import { About01, About02, About03, AboutBanner } from "@/assets/images";
 import Footer from "@/components/landing-page/Footer";
 
 export default function AboutPage() {
 	return (
 		<>
 			<Navbar />
-			<div className="aboutBanner h-[50vh] w-full bg-paleYellow border border-b-black"></div>
+			<div
+				id="about"
+				style={{
+					backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${AboutBanner.src})`,
+					backgroundPosition: "center",
+					backgroundSize: "cover",
+					backgroundRepeat: "no-repeat",
+				}}
+				className="py-10 w-full h-[90vh] px-10 text-paleYellow flex justify-around items-center"
+			>
+				<div className="flex flex-col gap-5 text-center w-[80%]">
+					<h1 className="text-2xl md:text-5xl font-bold">
+						Empowering Your Healthcare Career
+					</h1>
+					<p className="text-lg md:text-xl font-semibold">
+						At our health and social care recruitment website, we
+						are dedicated to connecting top-tier healthcare
+						professionals with rewarding opportunities that align
+						with their expertise and passions
+					</p>
+				</div>
+			</div>
 			<div className="bg-paleYellow px-10 py-20 flex flex-col md:flex-row items-center gap-20">
 				<div className="w-full md:w-1/2">
 					<h1 className="text-4xl md:text-5xl font-bold">About Us</h1>
@@ -26,12 +47,20 @@ export default function AboutPage() {
 					</p>
 				</div>
 				<div className="w-full md:w-1/2 flex items-center justify-center">
-					<Image src={ServiceImage} alt="service-image" />
+					<Image
+						src={About01}
+						alt="service-image"
+						className="rounded-[20px]"
+					/>
 				</div>
 			</div>
 			<div className="bg-lightGrey text-white px-10 py-20 flex flex-col md:flex-row items-center gap-20">
 				<div className="w-full md:w-1/2 flex items-center justify-center">
-					<Image src={ServiceImage} alt="service-image" />
+					<Image
+						src={About02}
+						alt="service-image"
+						className="rounded-[20px]"
+					/>
 				</div>
 				<div className="w-full md:w-1/2">
 					<h1 className="text-4xl md:text-5xl font-bold">
@@ -60,7 +89,11 @@ export default function AboutPage() {
 					</p>
 				</div>
 				<div className="w-full md:w-1/2 flex items-center justify-center">
-					<Image src={ServiceImage} alt="service-image" />
+					<Image
+						src={About03}
+						alt="service-image"
+						className="rounded-[20px]"
+					/>
 				</div>
 			</div>
 			<div className="w-full bg-lightGrey px-10 py-20 text-white text-center">

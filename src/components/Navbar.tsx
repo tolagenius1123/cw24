@@ -9,7 +9,6 @@ import MobileMenu from "./MobileMenu";
 export default function Navbar() {
 	const router = useRouter();
 	const pathname = usePathname();
-	console.log(pathname);
 
 	return (
 		<header className="w-full bg-white px-10 py-2 flex items-center justify-between fixed z-10 shadow-md">
@@ -17,9 +16,9 @@ export default function Navbar() {
 			<div className="hidden md:flex items-center gap-20 mr-10">
 				<div className="flex gap-10 items-center">
 					<Link
-						href="/#home"
+						href="/"
 						className={`${
-							pathname === "/#home"
+							pathname === "/"
 								? "text-darkGrey"
 								: " text-lightGrey"
 						} font-semibold hover:text-darkGrey`}
