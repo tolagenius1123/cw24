@@ -54,7 +54,7 @@ export default function Team() {
 			</div>
 			<div className="mt-10 w-full grid grid-cols-1 md:grid-cols-4 gap-10">
 				{teamList.map((team) => (
-					<TeamCard team={team} />
+					<TeamCard key={team.id} team={team} />
 				))}
 			</div>
 			<div className="mt-20 w-full md:w-[60%] flex flex-col gap-5">
