@@ -51,7 +51,7 @@ const TestimonialCarousel = () => {
 					<div className="mt-10 w-[90%] mx-auto flex flex-col items-center gap-4">
 						<Image src={Rating} alt="rating-icon" />
 						<p className="font-semibold mt-3 text-center text-xl">
-							"{testimonials[activeIndex].text}"
+							&quot;{testimonials[activeIndex].text}&quot;
 						</p>
 						<div className="mt-3 flex items-center gap-3">
 							<Image

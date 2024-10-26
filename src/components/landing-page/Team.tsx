@@ -59,7 +59,7 @@ export default function Team() {
 			</div>
 			<div className="mt-20 w-full md:w-[60%] flex flex-col gap-5">
 				<h1 className="text-darkGrey text-2xl font-semibold">
-					We're hiring!
+					We&apos;re hiring!
 				</h1>
 				<h1 className="text-customRed">
 					Discover your next career opportunity with us today

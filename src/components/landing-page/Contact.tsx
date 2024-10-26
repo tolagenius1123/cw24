@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ContactForm from "./ContactForm";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -13,7 +12,8 @@ export default function Contact() {
 					<h1 className="text-xl font-semibold">Connect</h1>
 					<h1 className="text-4xl font-semibold">Get in Touch</h1>
 					<p>
-						We're here to assist with your inquiries and requests.
+						We&apos;re here to assist with your inquiries and
+						requests.
 					</p>
 				</div>
 				<div className="mt-10 flex flex-col gap-5">

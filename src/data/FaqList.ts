@@ -1,4 +1,11 @@
-const faqList = [
+type FAQProps = {
+	id: number;
+	question: string;
+	answer: string;
+	active?: number | undefined;
+};
+
+const faqList: FAQProps[] = [
 	{
 		id: 0,
 		question: "What services do you offer?",

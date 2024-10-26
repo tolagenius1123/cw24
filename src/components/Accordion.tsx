@@ -2,18 +2,24 @@
 import { ChevronRight } from "lucide-react";
 import React, { useState } from "react";
 
+type Data = {
+	id: number;
+	question: string;
+	answer: string;
+	active?: number | undefined;
+};
+
 type AccordionProps = {
 	question: string;
 	answer: string;
-	data: any;
-	// data: { id: number; question: string; answer: string };
+	data: Data;
 };
 
 const Accordion = ({ question, answer, data }: AccordionProps) => {
 	const [item, setItem] = useState(data);
 
 	const handleToggle = () => {
-		let newActive = item.active === 1 ? 0 : 1;
+		const newActive = item.active === 1 ? 0 : 1;
 		setItem({ ...item, active: newActive });
 	};
 

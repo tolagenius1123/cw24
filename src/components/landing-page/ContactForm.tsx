@@ -33,7 +33,14 @@ export default function ContactForm() {
 			category: [],
 		},
 		validationSchema,
-		onSubmit: (values: any) => {
+		onSubmit: (values: {
+			firstName: string;
+			lastName: string;
+			email: string;
+			phoneNumber: string;
+			message: string;
+			category: string[];
+		}) => {
 			console.log("Form values:", values);
 			setBtnTitle("Sending...");
 

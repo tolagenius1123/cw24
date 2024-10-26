@@ -32,7 +32,7 @@ export default function FAQs() {
 					<h1 className="text-2xl font-semibold">
 						Still have questions?
 					</h1>
-					<p>We're here to help you</p>
+					<p>We&apos;re here to help you</p>
 					<CustomButton
 						btnTitle="Contact"
 						btnType="button"
@@ -47,7 +47,7 @@ export default function FAQs() {
 					<h1 className="text-3xl md:text-4xl font-semibold">
 						Get in Touch
 					</h1>
-					<p>We're here to assist you with your inquiries</p>
+					<p>We&apos;re here to assist you with your inquiries</p>
 					<div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20">
 						<div className="flex flex-col gap-3 items-center">
 							<Image src={Email} alt="email-icon" />

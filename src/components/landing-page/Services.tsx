@@ -53,7 +53,7 @@ export default function Services() {
 				</div>
 				<div className="mt-10 md:mt-28 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-20">
 					{serviceList.map((service) => (
-						<ServiceCard id={service.id} service={service} />
+						<ServiceCard key={service.id} service={service} />
 					))}
 				</div>
 				<div className="mt-10 md:mt-20 flex items-center gap-5">
