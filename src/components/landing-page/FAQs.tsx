@@ -36,8 +36,8 @@ export default function FAQs() {
 					<CustomButton
 						btnTitle="Contact"
 						btnType="button"
-						btnStyles="text-darkGrey font-semibold border-2 w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer hover:bg-lightGrey hover:text-white"
-						btnAction={() => router.push("/")}
+						btnStyles="text-darkGrey font-semibold border-2 w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer hover:bg-lightGrey hover:text-white hover:border-none"
+						btnAction={() => router.push("/#contact")}
 					/>
 				</div>
 			</div>

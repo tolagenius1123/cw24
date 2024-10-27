@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Avatar, Leadership, Olly, Rating, Sandra } from "@/assets/images";
 import CustomButton from "../CustomButton";
+import { useRouter } from "next/navigation";
 
 const testimonials = [
 	{
@@ -26,6 +27,7 @@ const testimonials = [
 ];
 
 const TestimonialCarousel = () => {
+	const router = useRouter();
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	useEffect(() => {
@@ -102,13 +104,13 @@ const TestimonialCarousel = () => {
 							btnTitle="Contact"
 							btnType="button"
 							btnStyles="text-customRed font-semibold w-[134px] h-[48px] bg-white cursor-pointer hover:border-2 hover:bg-transparent hover:text-white transition ease-in-out duration-300"
-							btnAction={() => {}}
+							btnAction={() => router.push("/#contact")}
 						/>
 						<CustomButton
 							btnTitle="Learn More"
 							btnType="button"
 							btnStyles="text-white font-semibold border-2 w-[134px] h-[48px] bg-transparent border-white cursor-pointer transition ease-in-out duration-300 hover:bg-white hover:border-none hover:text-customRed"
-							btnAction={() => {}}
+							btnAction={() => router.push("/about")}
 						/>
 					</div>
 				</div>

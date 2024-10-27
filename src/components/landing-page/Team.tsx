@@ -67,7 +67,7 @@ export default function Team() {
 				<CustomButton
 					btnTitle="Open positions"
 					btnType="button"
-					btnStyles="text-darkGrey font-semibold border-2 w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer hover:bg-lightGrey hover:text-white"
+					btnStyles="text-darkGrey font-semibold border-2 w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer hover:border-none hover:bg-lightGrey hover:text-white"
 					btnAction={() => router.push("/")}
 				/>
 			</div>

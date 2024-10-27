@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 type ServiceCard = {
-	key: number;
 	service: {
 		id: number;
 		image: string;
@@ -10,11 +9,11 @@ type ServiceCard = {
 	};
 };
 
-export default function ServiceCard({ key, service }: ServiceCard) {
-	const { title, description, image } = service;
+export default function ServiceCard({ service }: ServiceCard) {
+	const { id, title, description, image } = service;
 
 	return (
-		<div key={key} className="flex flex-col gap-5 md:gap-8">
+		<div key={id} className="flex flex-col gap-5 md:gap-8">
 			<Image src={image} alt="service-logo" />
 			<h1 className="text-darkGrey text-3xl font-semibold">{title}</h1>
 			<p className="text-customRed">{description}</p>

@@ -16,10 +16,10 @@ export default function AboutPage() {
 					backgroundSize: "cover",
 					backgroundRepeat: "no-repeat",
 				}}
-				className="py-10 w-full h-[90vh] px-10 text-paleYellow flex justify-around items-center"
+				className="pt-20 w-full h-[80vh] md:h-[90vh] px-10 text-paleYellow flex justify-around items-center"
 			>
-				<div className="flex flex-col gap-5 text-center w-[80%]">
-					<h1 className="text-2xl md:text-5xl font-bold">
+				<div className="flex flex-col gap-5 text-center md:w-[80%]">
+					<h1 className="text-3xl md:text-5xl font-bold">
 						Empowering Your Healthcare Career
 					</h1>
 					<p className="text-lg md:text-xl font-semibold">
@@ -30,10 +30,10 @@ export default function AboutPage() {
 					</p>
 				</div>
 			</div>
-			<div className="bg-paleYellow px-10 py-20 flex flex-col md:flex-row items-center gap-20 text-darkGrey">
+			<div className="bg-paleYellow px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20 text-darkGrey">
 				<div className="w-full md:w-1/2">
-					<h1 className="text-4xl md:text-5xl font-bold">About Us</h1>
-					<p className="mt-5 md:mt-8 text-lg">
+					<h1 className="text-3xl md:text-5xl font-bold">About Us</h1>
+					<p className="mt-5 md:mt-8 text-[15px] md:text-lg">
 						CW24 is a healthcare recruitment agency dedicated to
 						providing high-quality staffing solutions for healthcare
 						providers across the UK. We specialize in temporary and
@@ -54,7 +54,7 @@ export default function AboutPage() {
 					/>
 				</div>
 			</div>
-			<div className="bg-lightGrey text-white px-10 py-20 flex flex-col md:flex-row items-center gap-20">
+			<div className="bg-lightGrey text-white px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
 				<div className="w-full md:w-1/2 flex items-center justify-center">
 					<Image
 						src={About02}
@@ -66,7 +66,7 @@ export default function AboutPage() {
 					<h1 className="text-4xl md:text-5xl font-bold">
 						Mission and Vision
 					</h1>
-					<p className="mt-5 md:mt-8 text-lg">
+					<p className="mt-5 md:mt-8 text-[15px] md:text-lg">
 						At CW24, our mission is to improve the quality of care
 						provided in the healthcare sector by delivering
 						top-notch recruitment services. We aim to be the go-to
@@ -76,10 +76,10 @@ export default function AboutPage() {
 					</p>
 				</div>
 			</div>
-			<div className="bg-white text-darkGrey px-10 py-20 flex flex-col md:flex-row items-center gap-20">
+			<div className="bg-white text-darkGrey px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
 				<div className="w-full md:w-1/2">
 					<h1 className="text-4xl md:text-5xl font-bold">Careers</h1>
-					<p className="mt-5 md:mt-8 text-lg">
+					<p className="mt-5 md:mt-8 text-[15px] md:text-lg">
 						At CW24, we are always on the lookout for skilled
 						healthcare professionals to join our growing team.
 						Whether youre looking for temporary or permanent
@@ -97,7 +97,7 @@ export default function AboutPage() {
 				</div>
 			</div>
 			<div className="w-full bg-lightGrey px-10 py-20 text-white text-center">
-				<div className="w-[80%] mx-auto flex flex-col items-center gap-5">
+				<div className="md:w-[80%] mx-auto flex flex-col items-center gap-5">
 					<h1 className="text-3xl md:text-4xl font-semibold">
 						Compliance and Standards
 					</h1>

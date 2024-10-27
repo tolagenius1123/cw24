@@ -59,8 +59,8 @@ export default function Services() {
 					<CustomButton
 						btnTitle="Learn More"
 						btnType="button"
-						btnStyles="text-darkGrey font-semibold border-2 w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer hover:bg-lightGrey hover:text-white"
-						btnAction={() => router.push("/")}
+						btnStyles="text-darkGrey font-semibold border-2 w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer hover:bg-lightGrey hover:text-white hover:border-none"
+						btnAction={() => router.push("/about")}
 					/>
 					<CustomButton
 						btnTitle={
@@ -71,7 +71,9 @@ export default function Services() {
 						}
 						btnType="button"
 						btnStyles="text-darkGrey font-semibold w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer"
-						btnAction={() => router.push("/")}
+						btnAction={() =>
+							router.push("https://forms.gle/N6uMEQNFr7ibosG89")
+						}
 					/>
 				</div>
 			</div>

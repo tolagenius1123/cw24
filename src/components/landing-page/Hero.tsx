@@ -27,13 +27,15 @@ const HeroSection = () => {
 						btnTitle="Get Started"
 						btnType="button"
 						btnStyles="text-white font-semibold border-none w-[134px] h-[48px] bg-darkGrey cursor-pointer hover:bg-lightGrey"
-						btnAction={() => router.push("/")}
+						btnAction={() =>
+							router.push("https://forms.gle/N6uMEQNFr7ibosG89")
+						}
 					/>
 					<CustomButton
 						btnTitle="Learn More"
 						btnType="button"
 						btnStyles="text-darkGrey font-semibold border-2 w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer hover:bg-lightGrey hover:text-white hover:border-none"
-						btnAction={() => router.push("/")}
+						btnAction={() => router.push("/about")}
 					/>
 				</div>
 			</div>
