@@ -20,7 +20,13 @@ export default function TeamCard({ team }: TeamCardProps) {
 			key={id}
 			className="w-full flex flex-col gap-5 md:gap-6 text-darkGrey"
 		>
-			<Image src={image} alt="service-logo" className="w-full " />
+			<Image
+				src={image}
+				alt="service-logo"
+				className="w-auto h-[250px]"
+				// height={300}
+				// width={300}
+			/>
 			<div className="">
 				<h1 className="text-xl font-bold">{fullname}</h1>
 				<p className="">{role}</p>

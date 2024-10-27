@@ -1,12 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Avatar, Leadership, Rating } from "@/assets/images";
+import { Avatar, Leadership, Olly, Rating, Sandra } from "@/assets/images";
 import CustomButton from "../CustomButton";
 
 const testimonials = [
 	{
-		text: "The team at Health and Social Care Recruitment exceeded our expectations. Their dedication to finding the right fit for our organization was truly impressive.",
+		text: "The team at cw24 exceeded our expectations on the speed at which they were able to find cover for us at such short notice",
 		name: "James Johnson",
 		title: "HR Manager, CarePlus",
 		avatar: Avatar,
@@ -15,13 +15,13 @@ const testimonials = [
 		text: "Excellent service! They made the hiring process seamless and provided top-notch candidates.",
 		name: "Sarah Brown",
 		title: "CEO, WellCare",
-		avatar: Avatar,
+		avatar: Sandra,
 	},
 	{
 		text: "Their professional approach and understanding of our needs were outstanding.",
-		name: "Michael Smith",
+		name: "Nancy Smith",
 		title: "Director, MedCare",
-		avatar: Avatar,
+		avatar: Olly,
 	},
 ];
 
@@ -57,6 +57,7 @@ const TestimonialCarousel = () => {
 							<Image
 								src={testimonials[activeIndex].avatar}
 								alt="avatar"
+								className="h-10 w-10 rounded-full"
 							/>
 							<div className="flex flex-col">
 								<p className="font-semibold">

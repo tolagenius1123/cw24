@@ -16,11 +16,11 @@ const faqList: FAQProps[] = [
 		question: "How do I apply?",
 		answer: "Applying is simple! Visit our 'Careers' page to browse current openings and submit your application online. Our team will review your submission and get back to you promptly.",
 	},
-	{
-		id: 2,
-		question: "What is your delivery pricing model?",
-		answer: "There are many delivery related problems in Africa and many startups are stepping up to solve them. As we try to solve it in our own model, we will also support other ",
-	},
+	// {
+	// 	id: 2,
+	// 	question: "What is your delivery pricing model?",
+	// 	answer: "There are many delivery related problems in Africa and many startups are stepping up to solve them. As we try to solve it in our own model, we will also support other ",
+	// },
 	{
 		id: 3,
 		question: "What is the process?",

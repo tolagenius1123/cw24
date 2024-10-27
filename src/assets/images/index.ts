@@ -11,6 +11,9 @@ import About01 from "./about01.jpg";
 import About02 from "./about02.jpg";
 import About03 from "./about03.jpg";
 import AboutBanner from "./about-banner.jpg";
+import Shelly from "./shelly.jpeg";
+import Olly from "./olly.jpg";
+import Sandra from "./sandra.jpg";
 
 export {
 	Hero,
@@ -26,4 +29,7 @@ export {
 	About02,
 	About03,
 	AboutBanner,
+	Shelly,
+	Sandra,
+	Olly,
 };

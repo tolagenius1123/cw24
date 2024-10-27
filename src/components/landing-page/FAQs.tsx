@@ -67,7 +67,9 @@ export default function FAQs() {
 							<p className="font-normal">
 								Call us for immediate assistance and support
 							</p>
-							<Link href="/">+4473 4076 4149</Link>
+							<Link href="/">
+								+44 7340 764149, +44 2380 018034
+							</Link>
 						</div>
 						<div className="flex flex-col gap-3 items-center">
 							<Image src={Location} alt="email-icon" />

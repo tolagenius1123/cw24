@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { Team1, Team2, Team3, Team4 } from "@/assets/images";
+import { Shelly, Team1, Team2, Team3, Team4 } from "@/assets/images";
 import TeamCard from "./TeamCard";
 import CustomButton from "../CustomButton";
 
@@ -10,11 +10,11 @@ export default function Team() {
 	const teamList = [
 		{
 			id: 1,
-			image: Team1,
-			fullname: "John Stones",
-			role: "Recruitment Manager",
+			image: Shelly,
+			fullname: "Shelley West",
+			role: "Staff Allocation Officer",
 			description:
-				"Expert in sourcing top talent for health and social care.",
+				"Shelley West serves as our Staff Allocation Officer at CW24 Recruitment Agency, taking on the essential role of coordinating staffing solutions for our clients and ensuring every assignment is filled with precision and care.  meeting daily requirements and handling urgent staffing requests as they arise.",
 		},
 		{
 			id: 2,

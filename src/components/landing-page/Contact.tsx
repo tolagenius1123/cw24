@@ -23,7 +23,7 @@ export default function Contact() {
 					</div>
 					<div className="flex items-center gap-3">
 						<Phone />
-						<p className="">+447340764149</p>
+						<p className="">+44 7340 764149, +44 2380 018034</p>
 					</div>
 					<div className="flex items-center gap-3">
 						<MapPin />

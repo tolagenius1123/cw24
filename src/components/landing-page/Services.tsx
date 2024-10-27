@@ -22,8 +22,7 @@ export default function Services() {
 			id: 2,
 			image: ServiceLogo,
 			title: "Permanent Placement for Long-Term Success",
-			description:
-				"We help you find the perfect fit for your organization's culture and requirements.",
+			description: "access skilled care workers and registered nurses",
 		},
 		{
 			id: 3,
@@ -79,8 +78,8 @@ export default function Services() {
 			<div className="bg-lightGrey px-10 py-20 flex flex-col md:flex-row items-center gap-20 text-white">
 				<div className="w-full md:w-1/2">
 					<h1 className="text-4xl md:text-5xl font-bold">
-						Discover the Advantages of Our Health and Social Care
-						Recruitment Services
+						Discover the advantages of partnering with CW24 for your
+						health care recruitment needs
 					</h1>
 					<p className="mt-5 md:mt-8 text-lg">
 						Our expertise in health and social care recruitment
@@ -106,6 +105,17 @@ export default function Services() {
 							<p className="">
 								Tailored recruitment solutions for your unique
 								needs.
+							</p>
+						</div>
+						<div className="flex items-center gap-3">
+							<Image src={ServiceWhiteLogo} alt="hero-image" />
+							<p className="">24/7 on call service (free).</p>
+						</div>
+						<div className="flex items-center gap-3">
+							<Image src={ServiceWhiteLogo} alt="hero-image" />
+							<p className="">
+								Ability to fulfil last-minute requests at short
+								notice.
 							</p>
 						</div>
 					</div>

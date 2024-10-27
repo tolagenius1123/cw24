@@ -60,7 +60,9 @@ export default function Navbar() {
 					btnTitle="Sign Up"
 					btnType="button"
 					btnStyles="text-white rounded-md font-semibold border-none w-[120px] h-[40px] bg-darkGrey cursor-pointer hover:bg-lightGrey"
-					btnAction={() => router.push("/")}
+					btnAction={() =>
+						router.push("https://forms.gle/N6uMEQNFr7ibosG89")
+					}
 				/>
 			</div>
 			<MobileMenu />

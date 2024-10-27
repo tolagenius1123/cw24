@@ -30,10 +30,10 @@ export default function AboutPage() {
 					</p>
 				</div>
 			</div>
-			<div className="bg-paleYellow px-10 py-20 flex flex-col md:flex-row items-center gap-20">
+			<div className="bg-paleYellow px-10 py-20 flex flex-col md:flex-row items-center gap-20 text-darkGrey">
 				<div className="w-full md:w-1/2">
 					<h1 className="text-4xl md:text-5xl font-bold">About Us</h1>
-					<p className="mt-5 md:mt-8 text-lg text-customRed">
+					<p className="mt-5 md:mt-8 text-lg">
 						CW24 is a healthcare recruitment agency dedicated to
 						providing high-quality staffing solutions for healthcare
 						providers across the UK. We specialize in temporary and
@@ -76,10 +76,10 @@ export default function AboutPage() {
 					</p>
 				</div>
 			</div>
-			<div className="bg-white text-black px-10 py-20 flex flex-col md:flex-row items-center gap-20">
+			<div className="bg-white text-darkGrey px-10 py-20 flex flex-col md:flex-row items-center gap-20">
 				<div className="w-full md:w-1/2">
 					<h1 className="text-4xl md:text-5xl font-bold">Careers</h1>
-					<p className="mt-5 md:mt-8 text-lg text-customRed">
+					<p className="mt-5 md:mt-8 text-lg">
 						At CW24, we are always on the lookout for skilled
 						healthcare professionals to join our growing team.
 						Whether youre looking for temporary or permanent
