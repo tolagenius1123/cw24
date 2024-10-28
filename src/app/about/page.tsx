@@ -112,7 +112,7 @@ export default function AboutPage() {
 					<p className="mt-5 md:mt-8 text-[15px] md:text-lg">
 						At CW24, we are always on the lookout for skilled
 						healthcare professionals to join our growing team.
-						Whether you're looking for temporary or permanent
+						Whether you&apos;re looking for temporary or permanent
 						positions, we provide exciting career opportunities in
 						various healthcare settings.{" "}
 						<a
