@@ -1,17 +1,17 @@
 "use client";
 import { ChevronRight } from "lucide-react";
-import React, { useState } from "react";
+import { ReactNode, useState } from "react";
 
 type Data = {
 	id: number;
 	question: string;
-	answer: string;
+	answer: ReactNode;
 	active?: number | undefined;
 };
 
 type AccordionProps = {
 	question: string;
-	answer: string;
+	answer: ReactNode;
 	data: Data;
 };
 

@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { Shelly, Team2, Team3, Team4 } from "@/assets/images";
+import { Azhar, ShellyPortrait, Team3, Team4 } from "@/assets/images";
 import TeamCard from "./TeamCard";
 import CustomButton from "../CustomButton";
 
@@ -10,7 +10,7 @@ export default function Team() {
 	const teamList = [
 		{
 			id: 1,
-			image: Shelly,
+			image: ShellyPortrait,
 			fullname: "Shelley West",
 			role: "Staff Allocation Officer",
 			description:
@@ -18,11 +18,11 @@ export default function Team() {
 		},
 		{
 			id: 2,
-			image: Team2,
-			fullname: "Jane Smith",
-			role: "Talent Specialist",
+			image: Azhar,
+			fullname: "Azhar Ahmed",
+			role: "Head of Admin and Compliance",
 			description:
-				"Passionate about connecting candidates with meaningful opportunities.",
+				"Azhar Ahmed is our Head of Admin and Compliance at CW24, overseeing the essential frameworks that ensure our organization meets and exceeds the highest standards of regulatory and operational excellence. With extensive experience in administrative management and compliance, Azhar is instrumental in maintaining rigorous compliance protocols and a smoothly functioning administrative system.",
 		},
 		{
 			id: 3,
@@ -49,7 +49,8 @@ export default function Team() {
 					Our Team
 				</h1>
 				<p className="text-customRed">
-					Dedicated professionals committed to your recruitment needs.
+					Dedicated healthcare professionals committed to your
+					recruitment needs.
 				</p>
 			</div>
 			<div className="mt-10 w-full grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -61,14 +62,16 @@ export default function Team() {
 				<h1 className="text-darkGrey text-2xl font-semibold">
 					We&apos;re hiring!
 				</h1>
-				<h1 className="text-customRed">
+				<h1 className="">
 					Discover your next career opportunity with us today
 				</h1>
 				<CustomButton
 					btnTitle="Open positions"
 					btnType="button"
 					btnStyles="text-darkGrey font-semibold border-2 w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer hover:border-none hover:bg-lightGrey hover:text-white"
-					btnAction={() => router.push("/")}
+					btnAction={() =>
+						router.push("https://forms.gle/N6uMEQNFr7ibosG89")
+					}
 				/>
 			</div>
 		</div>

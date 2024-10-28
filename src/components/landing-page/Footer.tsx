@@ -17,7 +17,16 @@ export default function Footer() {
 					<div className="mt-5 flex flex-col">
 						<p className="font-semibold">Contact:</p>
 						<div className="">
-							<p className="">+44 7340 764149, +44 2380 018034</p>
+							<div className="flex flex-col">
+								<div className="flex items-center gap-2">
+									<span className="">Mobile:</span>
+									+44 7340 764149
+								</div>
+								<div className="flex items-center gap-2">
+									<span className="">Landline:</span>
+									+44 2380 018034
+								</div>
+							</div>
 							<p className="">info@cw24.co.uk</p>
 						</div>
 					</div>

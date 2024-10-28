@@ -16,14 +16,11 @@ export default function TeamCard({ team }: TeamCardProps) {
 	const { id, image, fullname, role, description } = team;
 
 	return (
-		<div
-			key={id}
-			className="w-full flex flex-col gap-5 md:gap-6 text-darkGrey"
-		>
+		<div key={id} className="w-full flex flex-col gap-5 text-darkGrey">
 			<Image
 				src={image}
 				alt="service-logo"
-				className="w-auto h-[250px]"
+				className="w-auto h-[250px] rounded-lg"
 				// height={300}
 				// width={300}
 			/>
@@ -32,7 +29,7 @@ export default function TeamCard({ team }: TeamCardProps) {
 				<p className="">{role}</p>
 			</div>
 			<div className="">
-				<p className="">{description}</p>
+				<p className="text-sm">{description}</p>
 			</div>
 			<div className="flex items-center gap-3">
 				<Link href="/">

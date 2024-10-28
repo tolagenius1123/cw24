@@ -18,7 +18,7 @@ const HeroSection = () => {
 				</h1>
 				<p className="mt-2 text-customRed text-lg">
 					Our recruitment services specialize in matching skilled
-					professionals with leading health and social care
+					health professionals with leading health and social care
 					organizations. Let us help you find the perfect fit for your
 					team today!
 				</p>

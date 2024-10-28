@@ -23,7 +23,16 @@ export default function Contact() {
 					</div>
 					<div className="flex items-center gap-3">
 						<Phone />
-						<p className="">+44 7340 764149, +44 2380 018034</p>
+						<div className="flex flex-col">
+							<div className="flex items-center gap-2">
+								<span className="">Mobile:</span>
+								+44 7340 764149
+							</div>
+							<div className="flex items-center gap-2">
+								<span className="">Landline:</span>
+								+44 2380 018034
+							</div>
+						</div>
 					</div>
 					<div className="flex items-center gap-3">
 						<MapPin />

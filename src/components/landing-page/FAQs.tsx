@@ -67,9 +67,20 @@ export default function FAQs() {
 							<p className="font-normal">
 								Call us for immediate assistance and support
 							</p>
-							<Link href="/">
-								+44 7340 764149, +44 2380 018034
-							</Link>
+							<div className="flex flex-col items-center">
+								<div className="flex items-center gap-2">
+									<span className="font-semibold">
+										Mobile:
+									</span>
+									+44 7340 764149
+								</div>
+								<div className="flex items-center gap-2">
+									<span className="font-semibold">
+										Landline:
+									</span>
+									+44 2380 018034
+								</div>
+							</div>
 						</div>
 						<div className="flex flex-col gap-3 items-center">
 							<Image src={Location} alt="email-icon" />

@@ -16,13 +16,14 @@ export default function Services() {
 			image: ServiceLogo,
 			title: "Temporary Staffing Solutions",
 			description:
-				"Access skilled professionals on short notice to fill gaps in your workforce.",
+				"Access skilled healthcare professionals on short notice to fill gaps in your workforce.",
 		},
 		{
 			id: 2,
 			image: ServiceLogo,
 			title: "Permanent Placement for Long-Term Success",
-			description: "access skilled care workers and registered nurses",
+			description:
+				"access skilled healthcare workers and registered nurses",
 		},
 		{
 			id: 3,

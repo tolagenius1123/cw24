@@ -30,20 +30,28 @@ export default function AboutPage() {
 					</p>
 				</div>
 			</div>
-			<div className="bg-paleYellow px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20 text-darkGrey">
+			<div className="bg-white px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20 text-darkGrey">
 				<div className="w-full md:w-1/2">
 					<h1 className="text-3xl md:text-5xl font-bold">About Us</h1>
 					<p className="mt-5 md:mt-8 text-[15px] md:text-lg">
-						CW24 is a healthcare recruitment agency dedicated to
-						providing high-quality staffing solutions for healthcare
-						providers across the UK. We specialize in temporary and
-						permanent placements, ensuring that our clients have
-						access to highly skilled and reliable healthcare
-						professionals. CW24 is led by a team of very experienced
-						directors with decades of experience delivering
-						high-quality services in the healthcare and recruitment
-						sectors. Our commitment to excellence in recruitment,
-						compliance, and customer satisfaction sets us apart.
+						CW24 is a dedicated healthcare recruitment agency that
+						provides high-quality staffing solutions across the UK.
+						We specialize in placing{" "}
+						<span className="font-semibold">
+							Healthcare Assistants
+						</span>
+						, <span className="font-semibold">Support Workers</span>
+						, <span className="font-semibold">Chefs</span>,{" "}
+						<span className="font-semibold">
+							Domestic/Kitchen Assistants
+						</span>
+						, offering both temporary and permanent roles. Led by a
+						team of experienced directors with decades of expertise
+						in healthcare and recruitment, CW24 ensures that our
+						clients have access to skilled and reliable
+						professionals. Our strong focus on recruitment
+						excellence, compliance, and customer satisfaction sets
+						us apart in the industry.
 					</p>
 				</div>
 				<div className="w-full md:w-1/2 flex items-center justify-center">
@@ -79,13 +87,59 @@ export default function AboutPage() {
 			<div className="bg-white text-darkGrey px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
 				<div className="w-full md:w-1/2">
 					<h1 className="text-4xl md:text-5xl font-bold">Careers</h1>
-					<p className="mt-5 md:mt-8 text-[15px] md:text-lg">
+					{/* <p className="mt-5 md:mt-8 text-[15px] md:text-lg">
 						At CW24, we are always on the lookout for skilled
 						healthcare professionals to join our growing team.
 						Whether youre looking for temporary or permanent
 						positions, we provide exciting career opportunities in
-						various healthcare settings. Apply today or register
-						your interest by contacting us at info@cw24.co.uk.
+						various healthcare settings.{" "}
+						<a
+							href="https://forms.gle/N6uMEQNFr7ibosG89"
+							target="_blank"
+							className="text-blue-700 underline"
+						>
+							Apply today
+						</a>{" "}
+						or register your interest by contacting us at{" "}
+						<a
+							href="/"
+							target="_blank"
+							className="text-blue-700 underline"
+						>
+							info@cw24.co.uk.
+						</a>{" "}
+					</p> */}
+					<p className="mt-5 md:mt-8 text-[15px] md:text-lg">
+						At CW24, we are always on the lookout for skilled
+						healthcare professionals to join our growing team.
+						Whether you're looking for temporary or permanent
+						positions, we provide exciting career opportunities in
+						various healthcare settings.{" "}
+						<a
+							href="https://forms.gle/N6uMEQNFr7ibosG89"
+							target="_blank"
+							className="text-blue-700 underline"
+						>
+							Apply today
+						</a>{" "}
+						or register your interest by contacting us at{" "}
+						<a
+							href="mailto:info@cw24.co.uk"
+							target="_blank"
+							className="text-blue-700 underline"
+						>
+							info@cw24.co.uk.
+						</a>{" "}
+						<br />
+						We also offer{" "}
+						<span className="font-semibold">
+							comprehensive mandatory training
+						</span>{" "}
+						that is fully compliant with the Skills for{" "}
+						<span className="font-semibold">
+							Care Certificate standards
+						</span>
+						, providing confidence to both our staff and clients.
 					</p>
 				</div>
 				<div className="w-full md:w-1/2 flex items-center justify-center">
