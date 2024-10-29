@@ -28,7 +28,7 @@ const HeroSection = () => {
 						btnType="button"
 						btnStyles="text-white font-semibold border-none w-[134px] h-[48px] bg-darkGrey cursor-pointer hover:bg-lightGrey"
 						btnAction={() =>
-							router.push("https://forms.gle/N6uMEQNFr7ibosG89")
+							router.push("https://forms.gle/Dnw8CD5NArR82mmU9")
 						}
 					/>
 					<CustomButton

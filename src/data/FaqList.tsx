@@ -29,7 +29,7 @@ const faqList: FAQProps[] = [
 			<>
 				Applying is simple!{" "}
 				<a
-					href="https://forms.gle/N6uMEQNFr7ibosG89"
+					href="https://forms.gle/Dnw8CD5NArR82mmU9"
 					target="_blank"
 					className="text-blue-700 underline"
 				>

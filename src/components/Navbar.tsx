@@ -12,7 +12,9 @@ export default function Navbar() {
 
 	return (
 		<header className="w-full bg-white px-10 py-2 flex items-center justify-between fixed z-10 shadow-md">
-			<Image src={CW24} alt="logo" className="" />
+			<Link href="/">
+				<Image src={CW24} alt="logo" className="nav-logo" />
+			</Link>
 			<div className="hidden md:flex items-center gap-20 mr-10">
 				<div className="flex gap-10 items-center">
 					<Link
@@ -61,7 +63,7 @@ export default function Navbar() {
 					btnType="button"
 					btnStyles="text-white rounded-md font-semibold border-none w-[120px] h-[40px] bg-darkGrey cursor-pointer hover:bg-lightGrey"
 					btnAction={() =>
-						router.push("https://forms.gle/N6uMEQNFr7ibosG89")
+						router.push("https://forms.gle/Dnw8CD5NArR82mmU9")
 					}
 				/>
 			</div>

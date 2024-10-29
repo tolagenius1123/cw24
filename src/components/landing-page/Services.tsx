@@ -73,7 +73,7 @@ export default function Services() {
 						btnType="button"
 						btnStyles="text-darkGrey font-semibold w-[134px] h-[48px] bg-transparent border-darkGrey cursor-pointer"
 						btnAction={() =>
-							router.push("https://forms.gle/N6uMEQNFr7ibosG89")
+							router.push("https://forms.gle/Dnw8CD5NArR82mmU9")
 						}
 					/>
 				</div>
