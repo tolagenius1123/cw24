@@ -7,10 +7,13 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import { useForm } from "@formspree/react";
 
 export default function ContactForm() {
 	const { toast } = useToast();
 	const [btnTitle, setBtnTitle] = useState("Send");
+
+	const [state, handleSubmit] = useForm("mkgnjbvp");
 
 	const validationSchema = Yup.object({
 		firstName: Yup.string().required("First name is required"),
@@ -33,7 +36,7 @@ export default function ContactForm() {
 			category: [],
 		},
 		validationSchema,
-		onSubmit: (values: {
+		onSubmit: async (values: {
 			firstName: string;
 			lastName: string;
 			email: string;
@@ -41,20 +44,60 @@ export default function ContactForm() {
 			message: string;
 			category: string[];
 		}) => {
-			console.log("Form values:", values);
 			setBtnTitle("Sending...");
-
-			setTimeout(() => {
-				setBtnTitle(btnTitle);
-				toast({
-					variant: "success",
-					description:
-						"your have successfully sent a message to the admin.",
-				});
-				formik.resetForm();
-			}, 4000);
 		},
 	});
+
+	const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		await formik.submitForm(); // Validate and submit the form
+		if (!formik.isValid) return; // Prevent submission if validation fails
+
+		setBtnTitle("Sending...");
+
+		// Prepare the form data
+		const formData = {
+			firstName: formik.values.firstName,
+			lastName: formik.values.lastName,
+			email: formik.values.email,
+			phoneNumber: formik.values.phoneNumber,
+			message: formik.values.message,
+			category: formik.values.category,
+		};
+
+		try {
+			const response = await fetch("https://formspree.io/f/mkgnjbvp", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(formData),
+			});
+
+			setBtnTitle("Send");
+
+			if (response.ok) {
+				toast({
+					variant: "success",
+					description: "Your message has been successfully sent.",
+				});
+				formik.resetForm();
+			} else {
+				toast({
+					variant: "destructive",
+					description:
+						"There was an issue sending your message. Please try again.",
+				});
+			}
+		} catch (error) {
+			console.error("Error sending form data:", error);
+			toast({
+				variant: "destructive",
+				description: "An error occurred. Please try again.",
+			});
+			setBtnTitle("Send");
+		}
+	};
 
 	const handleCheckboxChange = (label: string) => {
 		const { category } = formik.values;
@@ -65,7 +108,7 @@ export default function ContactForm() {
 	};
 
 	return (
-		<form onSubmit={formik.handleSubmit}>
+		<form onSubmit={handleFormSubmit}>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 				<CustomInput
 					label="First Name"
@@ -132,44 +175,6 @@ export default function ContactForm() {
 			</div>
 			<div className="mt-8">
 				<h1>What describes you best?</h1>
-				{/* <div className="mt-5">
-					<div className="flex items-center gap-20 mb-5">
-						<div className="w-[200px] flex items-center gap-2">
-							<Checkbox id="terms1" />
-							<label htmlFor="terms1" className="text-sm">
-								Healthcare provider
-							</label>
-						</div>
-						<div className="w-[200px] flex items-center gap-2">
-							<Checkbox id="terms1" />
-							<label htmlFor="terms1" className="text-sm">
-								Job Seeker
-							</label>
-						</div>
-					</div>
-					<div className="flex items-center gap-20 mb-5">
-						<div className="w-[200px] flex items-center gap-2">
-							<Checkbox id="terms1" />
-							<label htmlFor="terms1" className="text-sm">
-								Client Inquiry
-							</label>
-						</div>
-						<div className="w-[200px] flex items-center gap-2">
-							<Checkbox id="terms1" />
-							<label htmlFor="terms1" className="text-sm">
-								General Question
-							</label>
-						</div>
-					</div>
-					<div className="flex items-center justify-between gap-20 mb-5">
-						<div className="w-[200px] flex items-center gap-2">
-							<Checkbox id="terms1" />
-							<label htmlFor="terms1" className="text-sm">
-								Other Inquiry
-							</label>
-						</div>
-					</div>
-				</div> */}
 				<div className="mt-5">
 					{[
 						"Healthcare provider",

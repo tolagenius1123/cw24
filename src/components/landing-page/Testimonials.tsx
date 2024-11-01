@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Avatar, Leadership, Olly, Rating, Sandra } from "@/assets/images";
 import CustomButton from "../CustomButton";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 const testimonials = [
 	{
@@ -39,6 +40,16 @@ const TestimonialCarousel = () => {
 
 		return () => clearInterval(interval);
 	}, []);
+
+	const containerVariants = {
+		hidden: { opacity: 0, y: -20 },
+		visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+	};
+
+	const imageVariants = {
+		hidden: { opacity: 0, scale: 0.8 },
+		visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+	};
 
 	return (
 		<>

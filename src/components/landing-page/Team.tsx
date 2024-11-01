@@ -54,8 +54,14 @@ export default function Team() {
 				</p>
 			</div>
 			<div className="mt-10 w-full grid grid-cols-1 md:grid-cols-4 gap-10">
-				{teamList.map((team) => (
-					<TeamCard key={team.id} team={team} />
+				{teamList.map((team, index) => (
+					<div
+						className={`scale-in`}
+						key={team.id}
+						style={{ animationDelay: `${index * 100}ms` }}
+					>
+						<TeamCard key={team.id} team={team} />
+					</div>
 				))}
 			</div>
 			<div className="mt-20 w-full md:w-[60%] flex flex-col gap-5">

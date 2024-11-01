@@ -5,3 +5,12 @@ type ServiceCard = {
 	title: string;
 	description: string;
 };
+
+type ContactData = {
+	firstName: "";
+	lastName: "";
+	email: "";
+	phoneNumber: "";
+	message: "";
+	category: [];
+};
