@@ -7,13 +7,10 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import { useForm } from "@formspree/react";
 
 export default function ContactForm() {
 	const { toast } = useToast();
 	const [btnTitle, setBtnTitle] = useState("Send");
-
-	const [state, handleSubmit] = useForm("mkgnjbvp");
 
 	const validationSchema = Yup.object({
 		firstName: Yup.string().required("First name is required"),
@@ -44,6 +41,7 @@ export default function ContactForm() {
 			message: string;
 			category: string[];
 		}) => {
+			console.log(values);
 			setBtnTitle("Sending...");
 		},
 	});
