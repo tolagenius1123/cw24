@@ -18,7 +18,7 @@ export default function TeamCard({ team }: TeamCardProps) {
 	return (
 		<div
 			key={id}
-			className="w-full flex flex-col gap-5 text-darkGrey team-card"
+			className="w-[70%] flex flex-col gap-5 text-darkGrey team-card"
 		>
 			<Image
 				src={image}

@@ -32,13 +32,13 @@ export default function Team() {
 			description:
 				"Focused on building strong relationships with our clients.",
 		},
-		{
-			id: 4,
-			image: Team4,
-			fullname: "Micheal Brown",
-			role: "Recruitment Consultant",
-			description: "Skilled in matching candidates with the right roles.",
-		},
+		// {
+		// 	id: 4,
+		// 	image: Team4,
+		// 	fullname: "Micheal Brown",
+		// 	role: "Recruitment Consultant",
+		// 	description: "Skilled in matching candidates with the right roles.",
+		// },
 	];
 
 	return (
@@ -53,10 +53,10 @@ export default function Team() {
 					recruitment needs.
 				</p>
 			</div>
-			<div className="mt-10 w-full grid grid-cols-1 md:grid-cols-4 gap-10">
+			<div className="mt-10 w-full grid grid-cols-1 md:grid-cols-3 gap-10">
 				{teamList.map((team, index) => (
 					<div
-						className={`scale-in`}
+						className={`scale-in flex justify-center`}
 						key={team.id}
 						style={{ animationDelay: `${index * 100}ms` }}
 					>
