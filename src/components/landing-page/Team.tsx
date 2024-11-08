@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { Azhar, ShellyPortrait, Team3, Team4 } from "@/assets/images";
+import { Azhar, ShellyPortrait, Team3 } from "@/assets/images";
 import TeamCard from "./TeamCard";
 import CustomButton from "../CustomButton";
 
