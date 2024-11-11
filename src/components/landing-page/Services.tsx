@@ -56,13 +56,13 @@ export default function Services() {
 					whileInView={{ y: 0, opacity: 1 }}
 					transition={{ duration: 0.5 }}
 				>
-					<h1 className="text-customRed font-bold text-2xl">
+					<h1 className="text-darkGrey font-bold text-2xl">
 						Services
 					</h1>
 					<h1 className="text-darkGrey text-4xl md:text-5xl font-semibold">
 						Comprehensive Recruitment Solutions for Healthcare
 					</h1>
-					<p className="text-customRed">
+					<p className="text-darkGrey">
 						Our recruitment services are designed to meet the unique
 						needs of healthcare providers, ensuring we connect them
 						with qualified professionals to enhance their operations

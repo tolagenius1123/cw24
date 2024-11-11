@@ -44,11 +44,11 @@ export default function Team() {
 	return (
 		<div id="team" className="w-full bg-paleYellow px-10 py-20">
 			<div className="w-full md:w-[60%] flex flex-col gap-5">
-				<h1 className="text-customRed font-bold text-2xl">Meet</h1>
+				<h1 className="text-darkGrey font-bold text-2xl">Meet</h1>
 				<h1 className="text-darkGrey text-4xl md:text-5xl font-semibold">
 					Our Team
 				</h1>
-				<p className="text-customRed">
+				<p className="text-darkGrey">
 					Dedicated healthcare professionals committed to your
 					recruitment needs.
 				</p>

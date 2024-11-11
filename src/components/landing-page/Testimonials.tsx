@@ -123,7 +123,7 @@ const TestimonialCarousel = () => {
 					<h1 className="text-3xl md:text-4xl font-semibold">
 						Our Team / Leadership
 					</h1>
-					<p className="text-customRed text-sm md:text-lg">
+					<p className="text-darkGrey text-sm md:text-lg">
 						Our leadership team consists of experienced directors
 						with a proven track record in both healthcare and
 						recruitment. Their extensive knowledge and expertise

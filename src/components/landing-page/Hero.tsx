@@ -27,10 +27,10 @@ const HeroSection = () => {
 				<h1 className="text-darkGrey text-[40px] md:text-[60px] font-bold leading-[50px] md:leading-[70px]">
 					Connecting You with Top Health Professionals
 				</h1>
-				<p className="mt-2 text-customRed text-lg">
-					Our recruitment services specialize in matching skilled
+				<p className="mt-2 text-darkGrey text-lg">
+					Our recruitment services specialise in matching skilled
 					health professionals with leading health and social care
-					organizations. Let us help you find the perfect fit for your
+					organisations. Let us help you find the perfect fit for your
 					team today!
 				</p>
 				<motion.div

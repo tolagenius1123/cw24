@@ -44,6 +44,12 @@ export default function AboutPage() {
 						, <span className="font-semibold">Chefs</span>,{" "}
 						<span className="font-semibold">
 							Domestic/Kitchen Assistants
+						</span>{" "}
+						to <span className="font-semibold">nursing homes</span>,{" "}
+						<span className="font-semibold">residential homes</span>{" "}
+						and{" "}
+						<span className="font-semibold">
+							learning disability establishments
 						</span>
 						, offering both temporary and permanent roles. Led by a
 						team of experienced directors with decades of expertise

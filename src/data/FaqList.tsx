@@ -14,11 +14,19 @@ const faqList: FAQProps[] = [
 		question: "What services do you offer?",
 		answer: (
 			<>
-				We specialize in connecting healthcare professionals with top
+				We specialise in connecting healthcare professionals with top
 				employers. Our services include recruitment for various
 				positions, including nursing, social work, and allied health
 				roles. We ensure a tailored approach to meet the unique needs of
 				both candidates and employers.
+				<p>
+					We provide a wide range of care and support services
+					tailored to individual needs. We provide various positions,
+					including Healthcare Assistants, Chefs, Support workers,
+					Registered mental health nurses, Registered Nurses and
+					housekeeping to Nursing, residential and learning disability
+					establishments.
+				</p>
 			</>
 		),
 	},
