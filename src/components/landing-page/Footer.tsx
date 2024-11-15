@@ -6,7 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
 	return (
-		<div className="w-full bg-white text-black px-10 py-20">
+		<div className="w-full bg-white text-black px-8 md:px-10 py-20">
 			<div className="flex flex-col md:flex-row justify-between gap-10">
 				<div className="flex flex-col gap-4">
 					<Image src={cw24} alt="footer-logo" />

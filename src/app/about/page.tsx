@@ -16,7 +16,7 @@ export default function AboutPage() {
 					backgroundSize: "cover",
 					backgroundRepeat: "no-repeat",
 				}}
-				className="pt-20 w-full h-[80vh] md:h-[90vh] px-10 text-paleYellow flex justify-around items-center"
+				className="pt-20 w-full h-[80vh] md:h-[90vh] px-8 md:px-10 text-paleYellow flex justify-around items-center"
 			>
 				<div className="flex flex-col gap-5 text-center md:w-[80%]">
 					<h1 className="text-3xl md:text-5xl font-bold">
@@ -30,7 +30,7 @@ export default function AboutPage() {
 					</p>
 				</div>
 			</div>
-			<div className="bg-white px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20 text-darkGrey">
+			<div className="bg-white px-8 md:px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20 text-darkGrey">
 				<div className="w-full md:w-1/2">
 					<h1 className="text-3xl md:text-5xl font-bold">About Us</h1>
 					<p className="mt-5 md:mt-8 text-[15px] md:text-lg">
@@ -68,7 +68,7 @@ export default function AboutPage() {
 					/>
 				</div>
 			</div>
-			<div className="bg-lightGrey text-white px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
+			<div className="bg-lightGrey text-white px-8 md:px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
 				<div className="w-full md:w-1/2 flex items-center justify-center">
 					<Image
 						src={About02}
@@ -90,7 +90,7 @@ export default function AboutPage() {
 					</p>
 				</div>
 			</div>
-			<div className="bg-white text-darkGrey px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
+			<div className="bg-white text-darkGrey px-8 md:px-10 py-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
 				<div className="w-full md:w-1/2">
 					<h1 className="text-4xl md:text-5xl font-bold">Careers</h1>
 					{/* <p className="mt-5 md:mt-8 text-[15px] md:text-lg">
@@ -156,7 +156,7 @@ export default function AboutPage() {
 					/>
 				</div>
 			</div>
-			<div className="w-full bg-lightGrey px-10 py-20 text-white text-center">
+			<div className="w-full bg-lightGrey px-8 md:px-10 py-20 text-white text-center">
 				<div className="md:w-[80%] mx-auto flex flex-col items-center gap-5">
 					<h1 className="text-3xl md:text-4xl font-semibold">
 						Compliance and Standards

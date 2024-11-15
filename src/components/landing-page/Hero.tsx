@@ -11,7 +11,7 @@ const HeroSection = () => {
 	return (
 		<motion.div
 			id="hero"
-			className="w-full bg-paleYellow px-10 pt-[150px] md:pt-[200px] pb-20 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20"
+			className="w-full bg-paleYellow px-8 md:px-10 pt-[150px] md:pt-[200px] pb-20 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20"
 		>
 			<motion.div
 				className="w-full md:w-1/2"

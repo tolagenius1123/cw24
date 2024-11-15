@@ -18,12 +18,12 @@ export default function TeamCard({ team }: TeamCardProps) {
 	return (
 		<div
 			key={id}
-			className="w-[70%] flex flex-col gap-5 text-darkGrey team-card"
+			className="w-full md:w-[90%] flex flex-col gap-5 text-darkGrey team-card"
 		>
 			<Image
 				src={image}
 				alt="service-logo"
-				className="w-auto h-[250px] rounded-lg"
+				className="w-auto h-[300px] rounded-lg"
 				// height={300}
 				// width={300}
 			/>

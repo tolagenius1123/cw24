@@ -12,7 +12,10 @@ export default function FAQs() {
 
 	return (
 		<>
-			<div id="team" className="w-full bg-white px-10 py-20 text-black">
+			<div
+				id="team"
+				className="w-full bg-white px-8 md:px-10 py-20 text-black"
+			>
 				<h1 className="text-4xl font-semibold">FAQs</h1>
 				<p className="mt-5">
 					Find answers to your most pressing questions about our
@@ -41,7 +44,7 @@ export default function FAQs() {
 					/>
 				</div>
 			</div>
-			<div className="w-full bg-lightGrey px-10 py-20 text-white text-center">
+			<div className="w-full bg-lightGrey px-8 md:px-10 py-20 text-white text-center">
 				<div className="w-[90%] mx-auto flex flex-col items-center gap-5">
 					<p className="font-semibold">Connect</p>
 					<h1 className="text-3xl md:text-4xl font-semibold">

@@ -44,7 +44,7 @@ const TestimonialCarousel = () => {
 		<>
 			<div
 				id="team"
-				className="w-full bg-white px-10 py-20 text-[#2B4449]"
+				className="w-full bg-white px-8 md:px-10 py-20 text-[#2B4449]"
 			>
 				<div className="w-[90%] md:w-[50%] mx-auto">
 					<h1 className="text-2xl font-semibold text-center">
@@ -89,7 +89,7 @@ const TestimonialCarousel = () => {
 			</div>
 			<div
 				id="team"
-				className="w-full bg-lightGrey px-10 py-20 text-white text-center"
+				className="w-full bg-lightGrey px-8 md:px-10 py-20 text-white text-center"
 			>
 				<div className="w-[80%] mx-auto flex flex-col items-center gap-5">
 					<h1 className="text-3xl md:text-4xl font-semibold">
@@ -117,7 +117,7 @@ const TestimonialCarousel = () => {
 			</div>
 			<div
 				id="team"
-				className="w-full bg-paleYellow px-10 py-20 text-darkGrey text-center"
+				className="w-full bg-paleYellow px-8 md:px-10 py-20 text-darkGrey text-center"
 			>
 				<div className="w-full md:w-[80%] mx-auto flex flex-col items-center gap-5">
 					<h1 className="text-3xl md:text-4xl font-semibold">

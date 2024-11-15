@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { Azhar, ShellyPortrait, Team3 } from "@/assets/images";
+import { Azhar, Eunice, ShellyPortrait, Team3 } from "@/assets/images";
 import TeamCard from "./TeamCard";
 import CustomButton from "../CustomButton";
 
@@ -26,19 +26,12 @@ export default function Team() {
 		},
 		{
 			id: 3,
-			image: Team3,
-			fullname: "Emily Johnson",
-			role: "Client Advisor",
+			image: Eunice,
+			fullname: "Eunice Scates",
+			role: "Care Coordinator",
 			description:
-				"Focused on building strong relationships with our clients.",
+				"As the Care Coordinator for CW24, Eunice Scates is a cornerstone of our team, bringing warmth, dedication, and a genuine commitment to client well-being. Known for her approachable and compassionate personality, Eunice fosters strong, trusting relationships with clients, and staff alike. Her attention to detail and proactive approach makes her an exceptional coordinator, ensuring that each client's staffing needs are met with precision and professionalism.",
 		},
-		// {
-		// 	id: 4,
-		// 	image: Team4,
-		// 	fullname: "Micheal Brown",
-		// 	role: "Recruitment Consultant",
-		// 	description: "Skilled in matching candidates with the right roles.",
-		// },
 	];
 
 	return (
@@ -56,7 +49,7 @@ export default function Team() {
 			<div className="mt-10 w-full grid grid-cols-1 md:grid-cols-3 gap-10">
 				{teamList.map((team, index) => (
 					<div
-						className={`scale-in flex justify-center`}
+						className={`scale-in flex`}
 						key={team.id}
 						style={{ animationDelay: `${index * 100}ms` }}
 					>

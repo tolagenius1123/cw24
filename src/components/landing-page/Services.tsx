@@ -39,7 +39,7 @@ export default function Services() {
 		<>
 			<motion.div
 				id="services"
-				className="w-full bg-white px-10 py-20"
+				className="w-full bg-white px-8 md:px-10 py-20"
 				initial="hidden"
 				whileInView="visible"
 				viewport={{ once: true, amount: 0.2 }}
@@ -136,7 +136,7 @@ export default function Services() {
 				</div>
 			</motion.div>
 
-			<div className="bg-lightGrey px-10 py-20 flex flex-col md:flex-row items-center gap-20 text-white">
+			<div className="bg-lightGrey px-8 md:px-10 py-20 flex flex-col md:flex-row items-center gap-20 text-white">
 				{/* Advantages Section */}
 				<motion.div
 					className="w-full md:w-1/2"

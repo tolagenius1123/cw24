@@ -11,7 +11,7 @@ export default function Navbar() {
 	const pathname = usePathname();
 
 	return (
-		<header className="w-full bg-white px-10 py-2 flex items-center justify-between fixed z-10 shadow-md">
+		<header className="w-full bg-white px-8 md:px-10 py-2 flex items-center justify-between fixed z-10 shadow-md">
 			<Link href="/">
 				<Image src={CW24} alt="logo" className="nav-logo" />
 			</Link>
